@@ -2,15 +2,35 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Pig Latin</title>
-    <script src="piglatin2.js"></script>
+    <title>Pig Latin Translator</title>
+    <link rel="stylesheet" type="text/css" href="pig_latin.css">
+    <script type="text/javascript" src="piglatin2.js"></script>
   </head>
-  <body style="background-color: lightblue">
-    <h1>Learn Pig Latin</h1>
-    <input style="width: 500px;" type="text" id="input" value="" placeholder="Enter text here">
+  <body>
+
+    <header>
+      <h1>Pig Latin Translator<img id="pig" src="img/pig.png"></h1>
+    </header>
+
+    <div id="main_container">
+
+      <div class="col1_md">
+        <textarea id="user_input" type="text" value="" placeholder="Enter text... "></textarea>
+        <input class="button" type="button" onclick="translator();" value="Translate"/>
+      </div>
+
+      <div id="translation">
+        <p id="pig-latin-translation"> ... </p>
+      </div>
+
+    </div>
+
     <br>
-    <p id="answer_field"></p>
-    <button onclick="translator()">Translate your message to Pig Latin</button>
     <br>
+
+    <footer>
+      <p>By: Tricia, Gui, and Niels.
+    </footer>
+
   </body>
 </html>
